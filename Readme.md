@@ -1,7 +1,7 @@
 
 # animate
 
-  Component: easily apply animate.css animations to elements via Javascript.
+  Component: easily apply [animate.css](http://daneden.me/animate/) animations to elements via Javascript.
 
 ## Installation
 
