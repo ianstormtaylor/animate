@@ -20,20 +20,20 @@
 
 ### animate.in(element, animation, callback)
 
-  Apply an "in" `animation` to an `element` to make it visible.
+  Apply an "in" `animation` to an `element` to make it visible. You can leave off the `-in` in the animation name.
 
   ```js
   var el = document.querySelector('a');
-  animateIn(el, 'fade');
+  animate.in(el, 'bounce');
   ```
 
 ### animate(element, animation, callback)
 
-  Apply an "out" `animation` to an `element` to make it invisible.
+  Apply an "out" `animation` to an `element` to make it invisible. You can leave off the `-out` in the animation name.
 
   ```js
   var el = document.querySelector('a');
-  animateOut(el, 'fade');
+  animate.out(el, 'flip');
   ```
 
 
