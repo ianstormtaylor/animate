@@ -1,0 +1,301 @@
+
+// Bounce
+// ------
+
+@mixin bounce($vendor: '', $height: 30px)
+    0%,
+    20%,
+    50%,
+    80%,
+    100%
+        #{$vendor}transform: translateY(0)
+    40%
+        #{$vendor}transform: translateY(-$height)
+    60%
+        #{$vendor}transform: translateY(-$height/2)
+
+@keyframes bounce
+    +bounce()
+@-webkit-keyframes bounce
+    +bounce(-webkit-)
+@-o-keyframes bounce
+    +bounce(-o-)
+@-moz-keyframes bounce
+    +bounce(-moz-)
+
+.bounce
+    +animation-name(bounce)
+
+@keyframes bounce-small
+    +bounce('', 15px)
+@-webkit-keyframes bounce-small
+    +bounce(-webkit-, 15px)
+@-o-keyframes bounce-small
+    +bounce(-o-, 15px)
+@-moz-keyframes bounce-small
+    +bounce(-moz-, 15px)
+
+.bounce-small
+    +animation-name(bounce-small)
+
+
+// ### Bounce In
+
+@mixin bounce-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: scale(.3)
+    50%
+        opacity: 1
+        #{$vendor}transform: scale(1.05)
+    70%
+        #{$vendor}transform: scale(.9)
+    100%
+        #{$vendor}transform: scale(1)
+
+@keyframes bounce-in
+    +bounce-in()
+@-webkit-keyframes bounce-in
+    +bounce-in(-webkit-)
+@-o-keyframes bounce-in
+    +bounce-in(-o-)
+@-moz-keyframes bounce-in
+    +bounce-in(-moz-)
+
+.bounce-in
+    +animation-name(bounce-in)
+
+
+// ### Bounce Down In
+
+@mixin bounce-down-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateY(-2000px)
+    60%
+        opacity: 1
+        #{$vendor}transform: translateY(30px)
+    80%
+        #{$vendor}transform: translateY(-10px)
+    100%
+        #{$vendor}transform: translateY(0)
+
+@keyframes bounce-down-in
+    +bounce-down-in()
+@-webkit-keyframes bounce-down-in
+    +bounce-down-in(-webkit-)
+@-o-keyframes bounce-down-in
+    +bounce-down-in(-o-)
+@-moz-keyframes bounce-down-in
+    +bounce-down-in(-moz-)
+
+.bounce-down-in
+    +animation-name(bounce-down-in)
+
+
+// ### Bounce Left In
+
+@mixin bounce-left-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateX(-2000px)
+    60%
+        opacity: 1
+        #{$vendor}transform: translateX(30px)
+    80%
+        #{$vendor}transform: translateX(-10px)
+    100%
+        #{$vendor}transform: translateX(0)
+
+@keyframes bounce-left-in
+    +bounce-left-in()
+@-webkit-keyframes bounce-left-in
+    +bounce-left-in(-webkit-)
+@-o-keyframes bounce-left-in
+    +bounce-left-in(-o-)
+@-moz-keyframes bounce-left-in
+    +bounce-left-in(-moz-)
+
+.bounce-left-in
+    +animation-name(bounce-left-in)
+
+
+// ### Bounce Right In
+
+@mixin bounce-right-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateX(2000px)
+    60%
+        opacity: 1
+        #{$vendor}transform: translateX(-30px)
+    80%
+        #{$vendor}transform: translateX(10px)
+    100%
+        #{$vendor}transform: translateX(0)
+
+@keyframes bounce-right-in
+    +bounce-right-in()
+@-webkit-keyframes bounce-right-in
+    +bounce-right-in(-webkit-)
+@-o-keyframes bounce-right-in
+    +bounce-right-in(-o-)
+@-moz-keyframes bounce-right-in
+    +bounce-right-in(-moz-)
+
+.bounce-right-in
+    +animation-name(bounce-right-in)
+
+
+// ### Bounce Up In
+
+@mixin bounce-up-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateY(2000px)
+    60%
+        opacity: 1
+        #{$vendor}transform: translateY(-30px)
+    80%
+        #{$vendor}transform: translateY(10px)
+    100%
+        #{$vendor}transform: translateY(0)
+
+@keyframes bounce-up-in
+    +bounce-up-in()
+@-webkit-keyframes bounce-up-in
+    +bounce-up-in(-webkit-)
+@-o-keyframes bounce-up-in
+    +bounce-up-in(-o-)
+@-moz-keyframes bounce-up-in
+    +bounce-up-in(-moz-)
+
+.bounce-up-in
+    +animation-name(bounce-up-in)
+
+
+// ### Bounce Out
+
+@mixin bounce-out($vendor: '')
+    0%
+        #{$vendor}transform: scale(1)
+    25%
+        #{$vendor}transform: scale(.95)
+    50%
+        opacity: 1
+        #{$vendor}transform: scale(1.1)
+    100%
+        opacity: 0
+        #{$vendor}transform: scale(.3)
+
+@keyframes bounce-out
+    +bounce-out()
+@-webkit-keyframes bounce-out
+    +bounce-out(-webkit-)
+@-o-keyframes bounce-out
+    +bounce-out(-o-)
+@-moz-keyframes bounce-out
+    +bounce-out(-moz-)
+
+.bounce-out
+    +animation-name(bounce-out)
+
+
+// ### Bounce Down Out
+
+@mixin bounce-down-out($vendor: '')
+    0%
+        #{$vendor}transform: translateY(0)
+    20%
+        opacity: 1
+        #{$vendor}transform: translateY(-20px)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateY(2000px)
+
+@keyframes bounce-down-out
+    +bounce-down-out()
+@-webkit-keyframes bounce-down-out
+    +bounce-down-out(-webkit-)
+@-o-keyframes bounce-down-out
+    +bounce-down-out(-o-)
+@-moz-keyframes bounce-down-out
+    +bounce-down-out(-moz-)
+
+.bounce-down-out
+    +animation-name(bounce-down-out)
+
+
+// ### Bounce Up Out
+
+@mixin bounce-up-out($vendor: '')
+    0%
+        #{$vendor}transform: translateY(0)
+    20%
+        opacity: 1
+        #{$vendor}transform: translateY(20px)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateY(-2000px)
+
+@keyframes bounce-up-out
+    +bounce-up-out()
+@-webkit-keyframes bounce-up-out
+    +bounce-up-out(-webkit-)
+@-o-keyframes bounce-up-out
+    +bounce-up-out(-o-)
+@-moz-keyframes bounce-up-out
+    +bounce-up-out(-moz-)
+
+.bounce-up-out
+    +animation-name(bounce-up-out)
+
+
+// ### Bounce Right Out
+
+@mixin bounce-right-out($vendor: '')
+    0%
+        #{$vendor}transform: translateX(0)
+    20%
+        opacity: 1
+        #{$vendor}transform: translateX(-20px)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateX(2000px)
+
+@keyframes bounce-right-out
+    +bounce-right-out()
+@-webkit-keyframes bounce-right-out
+    +bounce-right-out(-webkit-)
+@-o-keyframes bounce-right-out
+    +bounce-right-out(-o-)
+@-moz-keyframes bounce-right-out
+    +bounce-right-out(-moz-)
+
+.bounce-right-out
+    +animation-name(bounce-right-out)
+
+
+// ### Bounce Left Out
+
+@mixin bounce-left-out($vendor: '')
+    0%
+        #{$vendor}transform: translateX(0)
+    20%
+        opacity: 1
+        #{$vendor}transform: translateX(20px)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateX(-2000px)
+
+@keyframes bounce-left-out
+    +bounce-left-out()
+@-webkit-keyframes bounce-left-out
+    +bounce-left-out(-webkit-)
+@-o-keyframes bounce-left-out
+    +bounce-left-out(-o-)
+@-moz-keyframes bounce-left-out
+    +bounce-left-out(-moz-)
+
+.bounce-left-out
+    +animation-name(bounce-left-out)

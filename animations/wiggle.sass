@@ -1,0 +1,43 @@
+
+// Wiggle
+// ------
+
+@mixin wiggle($vendor: '')
+    0%
+        #{$vendor}transform: skewX(9deg)
+    10%
+        #{$vendor}transform: skewX(-8deg)
+    20%
+        #{$vendor}transform: skewX(7deg)
+    30%
+        #{$vendor}transform: skewX(-6deg)
+    40%
+        #{$vendor}transform: skewX(5deg)
+    50%
+        #{$vendor}transform: skewX(-4deg)
+    60%
+        #{$vendor}transform: skewX(3deg)
+    70%
+        #{$vendor}transform: skewX(-2deg)
+    80%
+        #{$vendor}transform: skewX(1deg)
+    90%
+        #{$vendor}transform: skewX(0deg)
+    100%
+        #{$vendor}transform: skewX(0deg)
+
+@keyframes wiggle
+    +wiggle()
+@-webkit-keyframes wiggle
+    +wiggle(-webkit-)
+@-o-keyframes wiggle
+    +wiggle(-o-)
+@-moz-keyframes wiggle
+    +wiggle(-moz-)
+
+.wiggle
+    +animation-name(wiggle)
+    +animation-timing-function(ease-in)
+
+.animated.wiggle
+    +animation-duration(.5)

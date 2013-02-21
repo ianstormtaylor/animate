@@ -1,0 +1,62 @@
+
+// Light Speed
+// -----------
+
+// ### Light Speed In
+
+@mixin light-speed-in($vendor: '')
+    0%
+        #{$vendor}transform: translateX(100%) skewX(-30deg)
+        opacity: 0
+    60%
+        #{$vendor}transform: translateX(-20%) skewX(30deg)
+        opacity: 1
+    80%
+        #{$vendor}transform: translateX(0%) skewX(-15deg)
+        opacity: 1
+    100%
+        #{$vendor}transform: translateX(0%) skewX(0deg)
+        opacity: 1
+
+@keyframes light-speed-in
+    +light-speed-in()
+@-webkit-keyframes light-speed-in
+    +light-speed-in(-webkit-)
+@-o-keyframes light-speed-in
+    +light-speed-in(-o-)
+@-moz-keyframes light-speed-in
+    +light-speed-in(-moz-)
+
+.light-speed-in
+    +animation-name(light-speed-in)
+    +animation-timing-function(ease-in)
+
+.animated.light-speed-in
+    +animation-duration(.4s)
+
+
+// ### Light Speed Out
+
+@mixin light-speed-in($vendor: '')
+    0%
+        #{$vendor}transform: translateX(0%) skewX(0deg)
+        opacity: 1
+    100%
+        #{$vendor}transform: translateX(100%) skewX(-30deg)
+        opacity: 0
+
+@keyframes light-speed-in
+    +light-speed-in()
+@-webkit-keyframes light-speed-in
+    +light-speed-in(-webkit-)
+@-o-keyframes light-speed-in
+    +light-speed-in(-o-)
+@-moz-keyframes light-speed-in
+    +light-speed-in(-moz-)
+
+.light-speed-in
+    +animation-name(light-speed-in)
+    +animation-timing-function(ease-in)
+
+.animated.light-speed-in
+    +animation-duration(.2s)

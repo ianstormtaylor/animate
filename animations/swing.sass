@@ -1,0 +1,28 @@
+
+// Swing
+// -----
+
+@mixin swing($vendor: '')
+    20%
+        #{$vendor}transform: rotate(15deg)
+    40%
+        #{$vendor}transform: rotate(-10deg)
+    60%
+        #{$vendor}transform: rotate(5deg)
+    80%
+        #{$vendor}transform: rotate(-5deg)
+    100%
+        #{$vendor}transform: rotate(0deg)
+
+@keyframes swing
+    +swing()
+@-webkit-keyframes swing
+    +swing(-webkit-)
+@-o-keyframes swing
+    +swing(-o-)
+@-moz-keyframes swing
+    +swing(-moz-)
+
+.swing
+    +animation-name(swing)
+    +transform-origin(top center)

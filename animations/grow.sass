@@ -1,0 +1,48 @@
+
+// Grow
+// ----
+
+// ### Grow In
+
+@mixin grow-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: scale(.3)
+    100%
+        opacity: 1
+        #{$vendor}transform: scale(1)
+
+@keyframes grow-in
+    +grow-in()
+@-webkit-keyframes grow-in
+    +grow-in(-webkit-)
+@-o-keyframes grow-in
+    +grow-in(-o-)
+@-moz-keyframes grow-in
+    +grow-in(-moz-)
+
+.grow-in
+    +animation-name(grow-in)
+
+
+// ### Grow Out
+
+@mixin grow-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: scale(1)
+    100%
+        opacity: 0
+        #{$vendor}transform: scale(2)
+
+@keyframes grow-out
+    +grow-out()
+@-webkit-keyframes grow-out
+    +grow-out(-webkit-)
+@-o-keyframes grow-out
+    +grow-out(-o-)
+@-moz-keyframes grow-out
+    +grow-out(-moz-)
+
+.grow-out
+    +animation-name(grow-out)

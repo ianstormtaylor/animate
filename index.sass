@@ -1,0 +1,63 @@
+
+// Vendor Helpers
+// ==============
+
+// List of support vendor prefixes.
+$vendors: '-webkit-' '-moz-' '-o-' ''
+
+@mixin vendorize($property, $values...)
+    @each $vendor in $vendors
+        #{$vendor}#{$property}: $values
+
+@mixin animation-duration($arguments...)
+    +vendorize(animation-duration, $arguments)
+
+@mixin animation-fill-mode($arguments...)
+    +vendorize(animation-fill-mode, $arguments)
+
+@mixin animation-name($arguments...)
+    +vendorize(animation-name, $arguments)
+
+@mixin animation-timing-function($arguments...)
+    +vendorize(animation-timing-function, $arguments)
+
+@mixin transform-origin($arguments...)
+    +vendorize(transform-origin, $arguments)
+
+@mixin transform-style($arguments...)
+    +vendorize(transform-style, $arguments)
+
+@mixin backface-visibility($arguments...)
+    +vendorize(backface-visibility, $arguments)
+
+
+
+// General
+// =======
+
+// Set some defaults that can be overriden on a per-animation basis.
+.animated
+    +animation-duration(.75s)
+    +animation-fill-mode(both)
+
+
+
+// Animations
+// ==========
+
+@import animations/bounce
+@import animations/fade
+@import animations/flash
+@import animations/fold
+@import animations/grow
+@import animations/hinge
+@import animations/light-speed
+@import animations/pulse
+@import animations/roll
+@import animations/rotate
+@import animations/shake
+@import animations/shrink
+@import animations/swing
+@import animations/tada
+@import animations/wiggle
+@import animations/wobble

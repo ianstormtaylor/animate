@@ -1,0 +1,116 @@
+
+// Fold
+// ----
+
+
+// ### Fold In
+
+@mixin fold-in($vendor: '', $max-height: 1000px)
+    0%
+        overflow: hidden
+        max-height: 0px
+    100%
+        overflow: hidden
+        max-height: $max-height
+
+@keyframes fold-in
+    +fold-in()
+@-webkit-keyframes fold-in
+    +fold-in(-webkit-)
+@-o-keyframes fold-in
+    +fold-in(-o-)
+@-moz-keyframes fold-in
+    +fold-in(-moz-)
+
+.fold-in
+    +animation-name(fold-in)
+
+.animated.fold-in
+    +animation-duration(1.2s)
+
+@keyframes fold-small-in
+    +fold-in('', 500px)
+@-webkit-keyframes fold-small-in
+    +fold-in(-webkit-, 500px)
+@-o-keyframes fold-small-in
+    +fold-in(-o-, 500px)
+@-moz-keyframes fold-small-in
+    +fold-in(-moz-, 500px)
+
+.fold-small-in
+    +animation-name(fold-small-out)
+
+.animated.fold-small-in
+    +animation-duration(1s)
+
+@keyframes fold-tiny-in
+    +fold-in('', 100px)
+@-webkit-keyframes fold-tiny-in
+    +fold-in(-webkit-, 100px)
+@-o-keyframes fold-tiny-in
+    +fold-in(-o-, 100px)
+@-moz-keyframes fold-tiny-in
+    +fold-in(-moz-, 100px)
+
+.fold-tiny-in
+    +animation-name(fold-tiny-out)
+
+.animated.fold-tiny-in
+    +animation-duration(1s)
+
+
+// ### Fold Out
+
+@mixin fold-out($vendor: '', $max-height: 1000px)
+    0%
+        overflow: hidden
+        max-height: $max-height
+    99%
+        overflow: hidden
+        max-height: 0px
+
+@keyframes fold-out
+    +fold-out()
+@-webkit-keyframes fold-out
+    +fold-out(-webkit-)
+@-o-keyframes fold-out
+    +fold-out(-o-)
+@-moz-keyframes fold-out
+    +fold-out(-moz-)
+
+.fold-out
+    +animation-name(fold-out)
+
+.animated.fold-out
+    +animation-duration(1.2s)
+
+@keyframes fold-small-out
+    +fold-in('', 500px)
+@-webkit-keyframes fold-small-out
+    +fold-in(-webkit-, 500px)
+@-o-keyframes fold-small-out
+    +fold-in(-o-, 500px)
+@-moz-keyframes fold-small-out
+    +fold-in(-moz-, 500px)
+
+.fold-small-out
+    +animation-name(fold-small-out)
+
+.animated.fold-small-out
+    +animation-duration(1s)
+
+@keyframes fold-tiny-out
+    +fold-in('', 100px)
+@-webkit-keyframes fold-tiny-out
+    +fold-in(-webkit-, 100px)
+@-o-keyframes fold-tiny-out
+    +fold-in(-o-, 100px)
+@-moz-keyframes fold-tiny-out
+    +fold-in(-moz-, 100px)
+
+.fold-tiny-out
+    +animation-name(fold-tiny-out)
+
+.animated.fold-tiny-out
+    +animation-duration(1s)
+

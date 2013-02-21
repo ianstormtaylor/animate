@@ -1,0 +1,19 @@
+{
+  "name": "css-animation-event-types",
+  "repo": "kewah/css-animation-event-types",
+  "description": "CSS animation event types detection. Adds vendor prefix if the browser is not compliant.",
+  "version": "0.1.0",
+  "keywords": [
+    "css",
+    "animation",
+    "events",
+    "keyframes",
+    "vendors"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

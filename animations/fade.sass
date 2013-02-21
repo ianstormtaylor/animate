@@ -1,0 +1,412 @@
+
+// Fade
+// ----
+
+// ### Fade In
+
+@mixin fade-in($vendor: '')
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes fade-in
+    +fade-in()
+@-webkit-keyframes fade-in
+    +fade-in(-webkit-)
+@-o-keyframes fade-in
+    +fade-in(-o-)
+@-moz-keyframes fade-in
+    +fade-in(-moz-)
+
+.fade-in
+    +animation-name(fade-in)
+
+
+// ### Fade Out
+
+@mixin fade-out($vendor: '')
+    0%
+        opacity: 1
+    100%
+        opacity: 0
+
+@keyframes fade-out
+    +fade-out()
+@-webkit-keyframes fade-out
+    +fade-out(-webkit-)
+@-o-keyframes fade-out
+    +fade-out(-o-)
+@-moz-keyframes fade-out
+    +fade-out(-moz-)
+
+.fade-out
+    +animation-name(fade-out)
+
+
+// Fade Down In
+
+@mixin fade-down-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateY(-20px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+
+@keyframes fade-down-in
+    +fade-down-in()
+@-webkit-keyframes fade-down-in
+    +fade-down-in(-webkit-)
+@-o-keyframes fade-down-in
+    +fade-down-in(-o-)
+@-moz-keyframes fade-down-in
+    +fade-down-in(-moz-)
+
+.fade-down-in
+    +animation-name(fade-down-in)
+
+
+// ### Fade Down Big In
+
+@mixin fade-down-big-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateY(-2000px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+
+@keyframes fade-down-big-in
+    +fade-down-big-in()
+@-webkit-keyframes fade-down-big-in
+    +fade-down-big-in(-webkit-)
+@-o-keyframes fade-down-big-in
+    +fade-down-big-in(-o-)
+@-moz-keyframes fade-down-big-in
+    +fade-down-big-in(-moz-)
+
+.fade-down-big-in
+    +animation-name(fade-down-big-in)
+
+
+// ### Fade Left In
+
+@mixin fade-left-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateX(-20px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+
+@keyframes fade-left-in
+    +fade-left-in()
+@-webkit-keyframes fade-left-in
+    +fade-left-in(-webkit-)
+@-o-keyframes fade-left-in
+    +fade-left-in(-o-)
+@-moz-keyframes fade-left-in
+    +fade-left-in(-moz-)
+
+.fade-left-in
+    +animation-name(fade-left-in)
+
+
+// ### Fade Left Big In
+
+@mixin fade-left-big-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateX(-2000px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+
+@keyframes fade-left-big-in
+    +fade-left-big-in()
+@-webkit-keyframes fade-left-big-in
+    +fade-left-big-in(-webkit-)
+@-o-keyframes fade-left-big-in
+    +fade-left-big-in(-o-)
+@-moz-keyframes fade-left-big-in
+    +fade-left-big-in(-moz-)
+
+.fade-left-big-in
+    +animation-name(fade-left-big-in)
+
+
+// ### Fade Right In
+
+@mixin fade-right-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateX(20px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+
+@keyframes fade-right-in
+    +fade-right-in()
+@-webkit-keyframes fade-right-in
+    +fade-right-in(-webkit-)
+@-o-keyframes fade-right-in
+    +fade-right-in(-o-)
+@-moz-keyframes fade-right-in
+    +fade-right-in(-moz-)
+
+.fade-right-in
+    +animation-name(fade-right-in)
+
+
+// ### Fade Right Big In
+
+@mixin fade-right-big-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateX(2000px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+
+@keyframes fade-right-big-in
+    +fade-right-big-in()
+@-webkit-keyframes fade-right-big-in
+    +fade-right-big-in(-webkit-)
+@-o-keyframes fade-right-big-in
+    +fade-right-big-in(-o-)
+@-moz-keyframes fade-right-big-in
+    +fade-right-big-in(-moz-)
+
+.fade-right-big-in
+    +animation-name(fade-right-big-in)
+
+
+// ### Fade Up In
+
+@mixin fade-up-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateY(20px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+
+@keyframes fade-up-in
+    +fade-up-in()
+@-webkit-keyframes fade-up-in
+    +fade-up-in(-webkit-)
+@-o-keyframes fade-up-in
+    +fade-up-in(-o-)
+@-moz-keyframes fade-up-in
+    +fade-up-in(-moz-)
+
+.fade-up-in
+    +animation-name(fade-up-in)
+
+
+// ### Fade Up Big In
+
+@mixin fade-up-big-in($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: translateY(2000px)
+    100%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+
+@keyframes fade-up-big-in
+    +fade-up-big-in()
+@-webkit-keyframes fade-up-big-in
+    +fade-up-big-in(-webkit-)
+@-o-keyframes fade-up-big-in
+    +fade-up-big-in(-o-)
+@-moz-keyframes fade-up-big-in
+    +fade-up-big-in(-moz-)
+
+.fade-up-big-in
+    +animation-name(fade-up-big-in)
+
+
+// ### Fade Down Out
+
+@mixin fade-down-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateY(20px)
+
+@keyframes fade-down-out
+    +fade-down-out()
+@-webkit-keyframes fade-down-out
+    +fade-down-out(-webkit-)
+@-o-keyframes fade-down-out
+    +fade-down-out(-o-)
+@-moz-keyframes fade-down-out
+    +fade-down-out(-moz-)
+
+.fade-down-out
+    +animation-name(fade-down-out)
+
+
+// ### Fade Down Big Out
+
+@mixin fade-down-big-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateY(2000px)
+
+@keyframes fade-down-big-out
+    +fade-down-big-out()
+@-webkit-keyframes fade-down-big-out
+    +fade-down-big-out(-webkit-)
+@-o-keyframes fade-down-big-out
+    +fade-down-big-out(-o-)
+@-moz-keyframes fade-down-big-out
+    +fade-down-big-out(-moz-)
+
+.fade-down-big-out
+    +animation-name(fade-down-big-out)
+
+
+// ### Fade Left Out
+
+@mixin fade-left-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateX(-20px)
+
+@keyframes fade-left-out
+    +fade-left-out()
+@-webkit-keyframes fade-left-out
+    +fade-left-out(-webkit-)
+@-o-keyframes fade-left-out
+    +fade-left-out(-o-)
+@-moz-keyframes fade-left-out
+    +fade-left-out(-moz-)
+
+.fade-left-out
+    +animation-name(fade-left-out)
+
+
+// ### Fade Left Big Out
+
+@mixin fade-left-big-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateX(-2000px)
+
+@keyframes fade-left-big-out
+    +fade-left-big-out()
+@-webkit-keyframes fade-left-big-out
+    +fade-left-big-out(-webkit-)
+@-o-keyframes fade-left-big-out
+    +fade-left-big-out(-o-)
+@-moz-keyframes fade-left-big-out
+    +fade-left-big-out(-moz-)
+
+.fade-left-big-out
+    +animation-name(fade-left-big-out)
+
+
+// ### Fade Right Out
+
+@mixin fade-right-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateX(20px)
+
+@keyframes fade-right-out
+    +fade-right-out()
+@-webkit-keyframes fade-right-out
+    +fade-right-out(-webkit-)
+@-o-keyframes fade-right-out
+    +fade-right-out(-o-)
+@-moz-keyframes fade-right-out
+    +fade-right-out(-moz-)
+
+.fade-right-out
+    +animation-name(fade-right-out)
+
+
+// ### Fade Right Big Out
+
+@mixin fade-right-big-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateX(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateX(2000px)
+
+@keyframes fade-right-big-out
+    +fade-right-big-out()
+@-webkit-keyframes fade-right-big-out
+    +fade-right-big-out(-webkit-)
+@-o-keyframes fade-right-big-out
+    +fade-right-big-out(-o-)
+@-moz-keyframes fade-right-big-out
+    +fade-right-big-out(-moz-)
+
+.fade-right-big-out
+    +animation-name(fade-right-big-out)
+
+
+// ### Fade Up Out
+
+@mixin fade-up-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateY(-20px)
+
+@keyframes fade-up-out
+    +fade-up-out()
+@-webkit-keyframes fade-up-out
+    +fade-up-out(-webkit-)
+@-o-keyframes fade-up-out
+    +fade-up-out(-o-)
+@-moz-keyframes fade-up-out
+    +fade-up-out(-moz-)
+
+.fade-up-out
+    +animation-name(fade-up-out)
+
+
+// ### Fade Up Big Out
+
+@mixin fade-up-big-out($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: translateY(0)
+    100%
+        opacity: 0
+        #{$vendor}transform: translateY(-2000px)
+
+@keyframes fade-up-big-out
+    +fade-up-big-out()
+@-webkit-keyframes fade-up-big-out
+    +fade-up-big-out(-webkit-)
+@-o-keyframes fade-up-big-out
+    +fade-up-big-out(-o-)
+@-moz-keyframes fade-up-big-out
+    +fade-up-big-out(-moz-)
+
+.fade-up-big-out
+    +animation-name(fade-up-big-out)

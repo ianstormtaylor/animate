@@ -1,0 +1,31 @@
+
+// Wobble
+// ------
+
+@mixin wobble($vendor: '')
+    0%
+        #{$vendor}transform: translateX(0%)
+    15%
+        #{$vendor}transform: translateX(-25%) rotate(-5deg)
+    30%
+        #{$vendor}transform: translateX(20%) rotate(3deg)
+    45%
+        #{$vendor}transform: translateX(-15%) rotate(-3deg)
+    60%
+        #{$vendor}transform: translateX(10%) rotate(2deg)
+    75%
+        #{$vendor}transform: translateX(-5%) rotate(-1deg)
+    100%
+        #{$vendor}transform: translateX(0%)
+
+@keyframes wobble
+    +wobble()
+@-webkit-keyframes wobble
+    +wobble(-webkit-)
+@-o-keyframes wobble
+    +wobble(-o-)
+@-moz-keyframes wobble
+    +wobble(-moz-)
+
+.wobble
+    +animation-name(wobble)

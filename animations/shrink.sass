@@ -1,0 +1,48 @@
+
+// Shrink
+// ----
+
+// ### Shrink In
+
+@mixin shrink-in($vendor: '')
+    0%
+        opacity: 1
+        #{$vendor}transform: scale(1)
+    100%
+        opacity: 0
+        #{$vendor}transform: scale(.3)
+
+@keyframes shrink-in
+    +shrink-in()
+@-webkit-keyframes shrink-in
+    +shrink-in(-webkit-)
+@-o-keyframes shrink-in
+    +shrink-in(-o-)
+@-moz-keyframes shrink-in
+    +shrink-in(-moz-)
+
+.shrink-in
+    +animation-name(shrink-in)
+
+
+// ### Shrink Out
+
+@mixin shrink-out($vendor: '')
+    0%
+        opacity: 0
+        #{$vendor}transform: scale(2)
+    100%
+        opacity: 1
+        #{$vendor}transform: scale(1)
+
+@keyframes shrink-out
+    +shrink-out()
+@-webkit-keyframes shrink-out
+    +shrink-out(-webkit-)
+@-o-keyframes shrink-out
+    +shrink-out(-o-)
+@-moz-keyframes shrink-out
+    +shrink-out(-moz-)
+
+.shrink-out
+    +animation-name(shrink-out)

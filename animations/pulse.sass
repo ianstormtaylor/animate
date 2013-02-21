@@ -1,0 +1,23 @@
+
+// Pulse
+// -----
+
+@mixin pulse($vendor: '')
+    0%
+        #{$vendor}transform: scale(1)
+    50%
+        #{$vendor}transform: scale(1.1)
+    100%
+        #{$vendor}transform: scale(1)
+
+@keyframes pulse
+    +pulse()
+@-webkit-keyframes pulse
+    +pulse(-webkit-)
+@-o-keyframes pulse
+    +pulse(-o-)
+@-moz-keyframes pulse
+    +pulse(-moz-)
+
+.pulse
+    +animation-name(pulse)

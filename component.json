@@ -1,0 +1,22 @@
+{
+  "name": "animate",
+  "repo": "ianstormtaylor/animate",
+  "description": "Component: easily apply animate.css animations to elements via Javascript.",
+  "version": "0.0.1",
+  "keywords": [
+    "animate",
+    "animate.css",
+    "animations"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "component/jquery": "*",
+    "kewah/css-animation-event-types": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "index.css"
+  ]
+}

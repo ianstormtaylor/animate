@@ -1,0 +1,138 @@
+
+// Flip
+// ----
+
+@mixin flip($vendor: '')
+    0%
+        #{$vendor}transform: perspective(400px) rotateY(0)
+        #{$vendor}animation-timing-function: ease-out
+    40%
+        #{$vendor}transform: perspective(400px) translateZ(150px) rotateY(170deg)
+        #{$vendor}animation-timing-function: ease-out
+    50%
+        #{$vendor}transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+        #{$vendor}animation-timing-function: ease-in
+    80%
+        #{$vendor}transform: perspective(400px) rotateY(360deg) scale(.95)
+        #{$vendor}animation-timing-function: ease-in
+    100%
+        #{$vendor}transform: perspective(400px) scale(1)
+        #{$vendor}animation-timing-function: ease-in
+
+@keyframes flip
+    +flip()
+@-webkit-keyframes flip
+    +flip(-webkit-)
+@-o-keyframes flip
+    +flip(-o-)
+@-moz-keyframes flip
+    +flip(-moz-)
+
+.flip
+    +animation-name(flip)
+    +transform-style(preserve-3d)
+    +backface-visibility(visible !important)
+
+
+// ### Flip X In
+
+@mixin flip-x-in($vendor: '')
+    0%
+        #{$vendor}transform: perspective(400px) rotateX(90deg)
+        opacity: 0
+    40%
+        transform: perspective(400px) rotateX(-10deg)
+    70%
+        transform: perspective(400px) rotateX(10deg)
+    100%
+        transform: perspective(400px) rotateX(0deg)
+        opacity: 1
+
+@keyframes flip-x-in
+    +flip-x-in()
+@-webkit-keyframes flip-x-in
+    +flip-x-in(-webkit-)
+@-o-keyframes flip-x-in
+    +flip-x-in(-o-)
+@-moz-keyframes flip-x-in
+    +flip-x-in(-moz-)
+
+.flip-x-in
+    +animation-name(flip-x-in)
+    +backface-visibility(visible !important)
+
+
+// ### Flip Y In
+
+@mixin flip-y-in($vendor: '')
+    0%
+        #{$vendor}transform: perspective(400px) rotateY(90deg)
+        opacity: 0
+    40%
+        transform: perspective(400px) rotateY(-10deg)
+    70%
+        transform: perspective(400px) rotateY(10deg)
+    100%
+        transform: perspective(400px) rotateY(0deg)
+        opacity: 1
+
+@keyframes flip-y-in
+    +flip-y-in()
+@-webkit-keyframes flip-y-in
+    +flip-y-in(-webkit-)
+@-o-keyframes flip-y-in
+    +flip-y-in(-o-)
+@-moz-keyframes flip-y-in
+    +flip-y-in(-moz-)
+
+.flip-y-in
+    +animation-name(flip-y-in)
+    +backface-visibility(visible !important)
+
+
+// ### Flip X Out
+
+@mixin flip-x-out($vendor: '')
+    0%
+        #{$vendor}transform: perspective(400px) rotateX(0deg)
+        opacity: 1
+    100%
+        transform: perspective(400px) rotateX(90deg)
+        opacity: 0
+
+@keyframes flip-x-out
+    +flip-x-out()
+@-webkit-keyframes flip-x-out
+    +flip-x-out(-webkit-)
+@-o-keyframes flip-x-out
+    +flip-x-out(-o-)
+@-moz-keyframes flip-x-out
+    +flip-x-out(-moz-)
+
+.flip-x-out
+    +animation-name(flip-x-out)
+    +backface-visibility(visible !important)
+
+
+// ### Flip Y Out
+
+@mixin flip-y-out($vendor: '')
+    0%
+        #{$vendor}transform: perspective(400px) rotateY(0deg)
+        opacity: 1
+    100%
+        transform: perspective(400px) rotateY(90deg)
+        opacity: 0
+
+@keyframes flip-y-out
+    +flip-y-out()
+@-webkit-keyframes flip-y-out
+    +flip-y-out(-webkit-)
+@-o-keyframes flip-y-out
+    +flip-y-out(-o-)
+@-moz-keyframes flip-y-out
+    +flip-y-out(-moz-)
+
+.flip-y-out
+    +animation-name(flip-y-out)
+    +backface-visibility(visible !important)

@@ -1,0 +1,42 @@
+
+// Hinge
+// -----
+
+@mixin hinge-out($vendor: '')
+    0%
+        #{$vendor}transform: rotate(0)
+        #{$vendor}transform-origin: top left
+        #{$vendor}animation-timing-function: ease-in-out
+    20%,
+    60%
+        #{$vendor}transform: rotate(80deg)
+        #{$vendor}transform-origin: top left
+        #{$vendor}animation-timing-function: ease-in-out
+    40%
+        #{$vendor}transform: rotate(60deg)
+        #{$vendor}transform-origin: top left
+        #{$vendor}animation-timing-function: ease-in-out
+    80%
+        #{$vendor}transform: rotate(60deg) translateY(0)
+        #{$vendor}transform-origin: top left
+        #{$vendor}animation-timing-function: ease-in-out
+        opacity: 1
+    100%
+        #{$vendor}transform: translateY(700px)
+        opacity: 0
+
+@keyframes hinge-out
+    +hinge-out()
+@-webkit-keyframes hinge-out
+    +hinge-out(-webkit-)
+@-o-keyframes hinge-out
+    +hinge-out(-o-)
+@-moz-keyframes hinge-out
+    +hinge-out(-moz-)
+
+.hinge-out
+    +animation-name(hinge-out)
+
+// Needs a longer animation duration.
+.animated.hinge-out
+    +animation-duration(1.75s)

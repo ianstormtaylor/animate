@@ -1,0 +1,254 @@
+
+// Rotate
+// ------
+
+// ### Rotate In
+
+@mixin rotate-in($vendor: '')
+    0%
+        #{$vendor}transform-origin: center center
+        #{$vendor}transform: rotate(-200deg)
+        opacity: 0
+    100%
+        #{$vendor}transform-origin: center center
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+
+@keyframes rotate-in
+    +rotate-in()
+@-webkit-keyframes rotate-in
+    +rotate-in(-webkit-)
+@-o-keyframes rotate-in
+    +rotate-in(-o-)
+@-moz-keyframes rotate-in
+    +rotate-in(-moz-)
+
+.rotate-in
+    +animation-name(rotate-in)
+
+
+// ### Rotate Down Left In
+
+@mixin rotate-down-left-in($vendor: '')
+    0%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(-90deg)
+        opacity: 0
+    100%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+
+@keyframes rotate-down-left-in
+    +rotate-down-left-in()
+@-webkit-keyframes rotate-down-left-in
+    +rotate-down-left-in(-webkit-)
+@-o-keyframes rotate-down-left-in
+    +rotate-down-left-in(-o-)
+@-moz-keyframes rotate-down-left-in
+    +rotate-down-left-in(-moz-)
+
+.rotate-down-left-in
+    +animation-name(rotate-down-left-in)
+
+
+// ### Rotate Down Right In
+
+@mixin rotate-down-right-in($vendor: '')
+    0%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(90deg)
+        opacity: 0
+    100%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+
+@keyframes rotate-down-right-in
+    +rotate-down-right-in()
+@-webkit-keyframes rotate-down-right-in
+    +rotate-down-right-in(-webkit-)
+@-o-keyframes rotate-down-right-in
+    +rotate-down-right-in(-o-)
+@-moz-keyframes rotate-down-right-in
+    +rotate-down-right-in(-moz-)
+
+.rotate-down-right-in
+    +animation-name(rotate-down-right-in)
+
+
+// Rotate Up Left In
+
+@mixin rotate-up-left-in($vendor: '')
+    0%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(90deg)
+        opacity: 0
+    100%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+
+@keyframes rotate-up-left-in
+    +rotate-up-left-in()
+@-webkit-keyframes rotate-up-left-in
+    +rotate-up-left-in(-webkit-)
+@-o-keyframes rotate-up-left-in
+    +rotate-up-left-in(-o-)
+@-moz-keyframes rotate-up-left-in
+    +rotate-up-left-in(-moz-)
+
+.rotate-up-left-in
+    +animation-name(rotate-up-left-in)
+
+
+// ### Rotate Up Right In
+
+@mixin rotate-up-right-in($vendor: '')
+    0%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(-90deg)
+        opacity: 0
+    100%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+
+@keyframes rotate-up-right-in
+    +rotate-up-right-in()
+@-webkit-keyframes rotate-up-right-in
+    +rotate-up-right-in(-webkit-)
+@-o-keyframes rotate-up-right-in
+    +rotate-up-right-in(-o-)
+@-moz-keyframes rotate-up-right-in
+    +rotate-up-right-in(-moz-)
+
+.rotate-up-right-in
+    +animation-name(rotate-up-right-in)
+
+
+// ### Rotate Out
+
+
+@mixin rotate-out($vendor: '')
+    0%
+        #{$vendor}transform-origin: center center
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+    100%
+        #{$vendor}transform-origin: center center
+        #{$vendor}transform: rotate(200deg)
+        opacity: 0
+
+@keyframes rotate-out
+    +rotate-out()
+@-webkit-keyframes rotate-out
+    +rotate-out(-webkit-)
+@-o-keyframes rotate-out
+    +rotate-out(-o-)
+@-moz-keyframes rotate-out
+    +rotate-out(-moz-)
+
+.rotate-out
+    +animation-name(rotate-out)
+
+
+// ### Rotate Down Left Out
+
+@mixin rotate-down-left-out($vendor: '')
+    0%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+    100%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(90deg)
+        opacity: 0
+
+@keyframes rotate-down-left-out
+    +rotate-down-left-out()
+@-webkit-keyframes rotate-down-left-out
+    +rotate-down-left-out(-webkit-)
+@-o-keyframes rotate-down-left-out
+    +rotate-down-left-out(-o-)
+@-moz-keyframes rotate-down-left-out
+    +rotate-down-left-out(-moz-)
+
+.rotate-down-left-out
+    +animation-name(rotate-down-left-out)
+
+
+// ### Rotate Down Right Out
+
+@mixin rotate-down-right-out($vendor: '')
+    0%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+    100%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(-90deg)
+        opacity: 0
+
+@keyframes rotate-down-right-out
+    +rotate-down-right-out()
+@-webkit-keyframes rotate-down-right-out
+    +rotate-down-right-out(-webkit-)
+@-o-keyframes rotate-down-right-out
+    +rotate-down-right-out(-o-)
+@-moz-keyframes rotate-down-right-out
+    +rotate-down-right-out(-moz-)
+
+.rotate-down-right-out
+    +animation-name(rotate-down-right-out)
+
+
+// ### Rotate Up Left Out
+
+
+@mixin rotate-up-left-out($vendor: '')
+    0%
+        #{$vendor}transform-origin: left bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+    100%
+        #{$vendor}-transform-origin: left bottom
+        #{$vendor}-transform: rotate(-90deg)
+        opacity: 0
+
+@keyframes rotate-up-left-out
+    +rotate-up-left-out()
+@-webkit-keyframes rotate-up-left-out
+    +rotate-up-left-out(-webkit-)
+@-o-keyframes rotate-up-left-out
+    +rotate-up-left-out(-o-)
+@-moz-keyframes rotate-up-left-out
+    +rotate-up-left-out(-moz-)
+
+.rotate-up-left-out
+    +animation-name(rotate-up-left-out)
+
+
+// ### Rotate Up Right Out
+
+@mixin rotate-up-right-out($vendor: '')
+    0%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(0)
+        opacity: 1
+    100%
+        #{$vendor}transform-origin: right bottom
+        #{$vendor}transform: rotate(90deg)
+        opacity: 0
+
+@keyframes rotate-up-right-out
+    +rotate-up-right-out()
+@-webkit-keyframes rotate-up-right-out
+    +rotate-up-right-out(-webkit-)
+@-o-keyframes rotate-up-right-out
+    +rotate-up-right-out(-o-)
+@-moz-keyframes rotate-up-right-out
+    +rotate-up-right-out(-moz-)
+
+.rotate-up-right-out
+    +animation-name(rotate-up-right-out)
