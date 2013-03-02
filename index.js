@@ -39,13 +39,18 @@ var animate = module.exports = function animate (element, animation, callback) {
  * Animate in from invisible.
  */
 
-module.exports.in = function animateIn (element, animation, callback) {
+module.exports.in = function animateIn (element, animation, add, callback) {
+  if (callback === undefined && 'function' === typeof add) callback = add;
+
   animation = animation + '-in';
 
-  // Make sure the element is visible, in case it was animated out.
-  $(element)
-    .css('visibility', 'visible')
-    .slideDown(100);
+  // If you've specific to add it, make sure the element is visible, in case it
+  // was animated out or `display: none`.
+  if (add) {
+    $(element)
+      .css('visibility', 'visible')
+      .slideDown(100);
+  }
 
   animate(element, animation, callback);
 };
@@ -55,14 +60,18 @@ module.exports.in = function animateIn (element, animation, callback) {
  * Animate out from invisible.
  */
 
-module.exports.out = function animateOut (element, animation, callback) {
+module.exports.out = function animateOut (element, animation, remove, callback) {
+  if (callback === undefined && 'function' === typeof remove) callback = remove;
+
   animation = animation + '-out';
 
-  // Make sure the element gets hidden, and it's height is taken care of
-  // smoothly when it's finally invisible.
+  // Make sure the element gets hidden, and if you've specified to remove it,
+  // that it's height is taken care of smoothly when it's finally invisible.
   animate(element, animation, function () {
-    $(element)
-      .css('visibility', 'hidden')
-      .slideUp(100, callback);
+    if (remove) {
+      $(element)
+        .css('visibility', 'hidden')
+        .slideUp(100, callback);
+    }
   });
 };
