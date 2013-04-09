@@ -1,11 +1,7 @@
 .animated {
   -webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  -o-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
@@ -83,8 +79,6 @@
 
 .bounce {
   -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  -o-animation-name: bounce;
   animation-name: bounce;
 }
 
@@ -162,8 +156,6 @@
 
 .bounce-small {
   -webkit-animation-name: bounce-small;
-  -moz-animation-name: bounce-small;
-  -o-animation-name: bounce-small;
   animation-name: bounce-small;
 }
 
@@ -249,8 +241,6 @@
 
 .bounce-in {
   -webkit-animation-name: bounce-in;
-  -moz-animation-name: bounce-in;
-  -o-animation-name: bounce-in;
   animation-name: bounce-in;
 }
 
@@ -336,8 +326,6 @@
 
 .bounce-down-in {
   -webkit-animation-name: bounce-down-in;
-  -moz-animation-name: bounce-down-in;
-  -o-animation-name: bounce-down-in;
   animation-name: bounce-down-in;
 }
 
@@ -423,8 +411,6 @@
 
 .bounce-left-in {
   -webkit-animation-name: bounce-left-in;
-  -moz-animation-name: bounce-left-in;
-  -o-animation-name: bounce-left-in;
   animation-name: bounce-left-in;
 }
 
@@ -510,8 +496,6 @@
 
 .bounce-right-in {
   -webkit-animation-name: bounce-right-in;
-  -moz-animation-name: bounce-right-in;
-  -o-animation-name: bounce-right-in;
   animation-name: bounce-right-in;
 }
 
@@ -597,8 +581,6 @@
 
 .bounce-up-in {
   -webkit-animation-name: bounce-up-in;
-  -moz-animation-name: bounce-up-in;
-  -o-animation-name: bounce-up-in;
   animation-name: bounce-up-in;
 }
 
@@ -684,8 +666,6 @@
 
 .bounce-out {
   -webkit-animation-name: bounce-out;
-  -moz-animation-name: bounce-out;
-  -o-animation-name: bounce-out;
   animation-name: bounce-out;
 }
 
@@ -755,8 +735,6 @@
 
 .bounce-down-out {
   -webkit-animation-name: bounce-down-out;
-  -moz-animation-name: bounce-down-out;
-  -o-animation-name: bounce-down-out;
   animation-name: bounce-down-out;
 }
 
@@ -826,8 +804,6 @@
 
 .bounce-up-out {
   -webkit-animation-name: bounce-up-out;
-  -moz-animation-name: bounce-up-out;
-  -o-animation-name: bounce-up-out;
   animation-name: bounce-up-out;
 }
 
@@ -897,8 +873,6 @@
 
 .bounce-right-out {
   -webkit-animation-name: bounce-right-out;
-  -moz-animation-name: bounce-right-out;
-  -o-animation-name: bounce-right-out;
   animation-name: bounce-right-out;
 }
 
@@ -968,8 +942,6 @@
 
 .bounce-left-out {
   -webkit-animation-name: bounce-left-out;
-  -moz-animation-name: bounce-left-out;
-  -o-animation-name: bounce-left-out;
   animation-name: bounce-left-out;
 }
 
@@ -1015,8 +987,6 @@
 
 .fade-in {
   -webkit-animation-name: fade-in;
-  -moz-animation-name: fade-in;
-  -o-animation-name: fade-in;
   animation-name: fade-in;
 }
 
@@ -1062,8 +1032,6 @@
 
 .fade-out {
   -webkit-animation-name: fade-out;
-  -moz-animation-name: fade-out;
-  -o-animation-name: fade-out;
   animation-name: fade-out;
 }
 
@@ -1117,8 +1085,6 @@
 
 .fade-down-in {
   -webkit-animation-name: fade-down-in;
-  -moz-animation-name: fade-down-in;
-  -o-animation-name: fade-down-in;
   animation-name: fade-down-in;
 }
 
@@ -1172,8 +1138,6 @@
 
 .fade-down-big-in {
   -webkit-animation-name: fade-down-big-in;
-  -moz-animation-name: fade-down-big-in;
-  -o-animation-name: fade-down-big-in;
   animation-name: fade-down-big-in;
 }
 
@@ -1227,8 +1191,6 @@
 
 .fade-left-in {
   -webkit-animation-name: fade-left-in;
-  -moz-animation-name: fade-left-in;
-  -o-animation-name: fade-left-in;
   animation-name: fade-left-in;
 }
 
@@ -1282,8 +1244,6 @@
 
 .fade-left-big-in {
   -webkit-animation-name: fade-left-big-in;
-  -moz-animation-name: fade-left-big-in;
-  -o-animation-name: fade-left-big-in;
   animation-name: fade-left-big-in;
 }
 
@@ -1337,8 +1297,6 @@
 
 .fade-right-in {
   -webkit-animation-name: fade-right-in;
-  -moz-animation-name: fade-right-in;
-  -o-animation-name: fade-right-in;
   animation-name: fade-right-in;
 }
 
@@ -1392,8 +1350,6 @@
 
 .fade-right-big-in {
   -webkit-animation-name: fade-right-big-in;
-  -moz-animation-name: fade-right-big-in;
-  -o-animation-name: fade-right-big-in;
   animation-name: fade-right-big-in;
 }
 
@@ -1447,8 +1403,6 @@
 
 .fade-up-in {
   -webkit-animation-name: fade-up-in;
-  -moz-animation-name: fade-up-in;
-  -o-animation-name: fade-up-in;
   animation-name: fade-up-in;
 }
 
@@ -1502,8 +1456,6 @@
 
 .fade-up-big-in {
   -webkit-animation-name: fade-up-big-in;
-  -moz-animation-name: fade-up-big-in;
-  -o-animation-name: fade-up-big-in;
   animation-name: fade-up-big-in;
 }
 
@@ -1557,8 +1509,6 @@
 
 .fade-down-out {
   -webkit-animation-name: fade-down-out;
-  -moz-animation-name: fade-down-out;
-  -o-animation-name: fade-down-out;
   animation-name: fade-down-out;
 }
 
@@ -1612,8 +1562,6 @@
 
 .fade-down-big-out {
   -webkit-animation-name: fade-down-big-out;
-  -moz-animation-name: fade-down-big-out;
-  -o-animation-name: fade-down-big-out;
   animation-name: fade-down-big-out;
 }
 
@@ -1667,8 +1615,6 @@
 
 .fade-left-out {
   -webkit-animation-name: fade-left-out;
-  -moz-animation-name: fade-left-out;
-  -o-animation-name: fade-left-out;
   animation-name: fade-left-out;
 }
 
@@ -1722,8 +1668,6 @@
 
 .fade-left-big-out {
   -webkit-animation-name: fade-left-big-out;
-  -moz-animation-name: fade-left-big-out;
-  -o-animation-name: fade-left-big-out;
   animation-name: fade-left-big-out;
 }
 
@@ -1777,8 +1721,6 @@
 
 .fade-right-out {
   -webkit-animation-name: fade-right-out;
-  -moz-animation-name: fade-right-out;
-  -o-animation-name: fade-right-out;
   animation-name: fade-right-out;
 }
 
@@ -1832,8 +1774,6 @@
 
 .fade-right-big-out {
   -webkit-animation-name: fade-right-big-out;
-  -moz-animation-name: fade-right-big-out;
-  -o-animation-name: fade-right-big-out;
   animation-name: fade-right-big-out;
 }
 
@@ -1887,8 +1827,6 @@
 
 .fade-up-out {
   -webkit-animation-name: fade-up-out;
-  -moz-animation-name: fade-up-out;
-  -o-animation-name: fade-up-out;
   animation-name: fade-up-out;
 }
 
@@ -1942,8 +1880,6 @@
 
 .fade-up-big-out {
   -webkit-animation-name: fade-up-big-out;
-  -moz-animation-name: fade-up-big-out;
-  -o-animation-name: fade-up-big-out;
   animation-name: fade-up-big-out;
 }
 
@@ -2001,8 +1937,6 @@
 
 .flash {
   -webkit-animation-name: flash;
-  -moz-animation-name: flash;
-  -o-animation-name: flash;
   animation-name: flash;
 }
 
@@ -2056,15 +1990,11 @@
 
 .fold-in {
   -webkit-animation-name: fold-in;
-  -moz-animation-name: fold-in;
-  -o-animation-name: fold-in;
   animation-name: fold-in;
 }
 
 .animated.fold-in {
   -webkit-animation-duration: 1.2s;
-  -moz-animation-duration: 1.2s;
-  -o-animation-duration: 1.2s;
   animation-duration: 1.2s;
 }
 
@@ -2118,15 +2048,11 @@
 
 .fold-small-in {
   -webkit-animation-name: fold-small-out;
-  -moz-animation-name: fold-small-out;
-  -o-animation-name: fold-small-out;
   animation-name: fold-small-out;
 }
 
 .animated.fold-small-in {
   -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
   animation-duration: 1s;
 }
 
@@ -2180,15 +2106,11 @@
 
 .fold-tiny-in {
   -webkit-animation-name: fold-tiny-out;
-  -moz-animation-name: fold-tiny-out;
-  -o-animation-name: fold-tiny-out;
   animation-name: fold-tiny-out;
 }
 
 .animated.fold-tiny-in {
   -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
   animation-duration: 1s;
 }
 
@@ -2242,15 +2164,11 @@
 
 .fold-out {
   -webkit-animation-name: fold-out;
-  -moz-animation-name: fold-out;
-  -o-animation-name: fold-out;
   animation-name: fold-out;
 }
 
 .animated.fold-out {
   -webkit-animation-duration: 1.2s;
-  -moz-animation-duration: 1.2s;
-  -o-animation-duration: 1.2s;
   animation-duration: 1.2s;
 }
 
@@ -2304,15 +2222,11 @@
 
 .fold-small-out {
   -webkit-animation-name: fold-small-out;
-  -moz-animation-name: fold-small-out;
-  -o-animation-name: fold-small-out;
   animation-name: fold-small-out;
 }
 
 .animated.fold-small-out {
   -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
   animation-duration: 1s;
 }
 
@@ -2366,15 +2280,11 @@
 
 .fold-tiny-out {
   -webkit-animation-name: fold-tiny-out;
-  -moz-animation-name: fold-tiny-out;
-  -o-animation-name: fold-tiny-out;
   animation-name: fold-tiny-out;
 }
 
 .animated.fold-tiny-out {
   -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
   animation-duration: 1s;
 }
 
@@ -2428,8 +2338,6 @@
 
 .grow-in {
   -webkit-animation-name: grow-in;
-  -moz-animation-name: grow-in;
-  -o-animation-name: grow-in;
   animation-name: grow-in;
 }
 
@@ -2483,8 +2391,6 @@
 
 .grow-out {
   -webkit-animation-name: grow-out;
-  -moz-animation-name: grow-out;
-  -o-animation-name: grow-out;
   animation-name: grow-out;
 }
 
@@ -2622,15 +2528,11 @@
 
 .hinge-out {
   -webkit-animation-name: hinge-out;
-  -moz-animation-name: hinge-out;
-  -o-animation-name: hinge-out;
   animation-name: hinge-out;
 }
 
 .animated.hinge-out {
   -webkit-animation-duration: 1.75s;
-  -moz-animation-duration: 1.75s;
-  -o-animation-duration: 1.75s;
   animation-duration: 1.75s;
 }
 
@@ -2724,19 +2626,13 @@
 
 .light-speed-in {
   -webkit-animation-name: light-speed-in;
-  -moz-animation-name: light-speed-in;
-  -o-animation-name: light-speed-in;
   animation-name: light-speed-in;
   -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  -o-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
 
 .animated.light-speed-in {
   -webkit-animation-duration: 0.4s;
-  -moz-animation-duration: 0.4s;
-  -o-animation-duration: 0.4s;
   animation-duration: 0.4s;
 }
 
@@ -2790,19 +2686,13 @@
 
 .light-speed-in {
   -webkit-animation-name: light-speed-in;
-  -moz-animation-name: light-speed-in;
-  -o-animation-name: light-speed-in;
   animation-name: light-speed-in;
   -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  -o-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
 
 .animated.light-speed-in {
   -webkit-animation-duration: 0.2s;
-  -moz-animation-duration: 0.2s;
-  -o-animation-duration: 0.2s;
   animation-duration: 0.2s;
 }
 
@@ -2864,8 +2754,6 @@
 
 .pulse {
   -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -o-animation-name: pulse;
   animation-name: pulse;
 }
 
@@ -2919,8 +2807,6 @@
 
 .roll-in {
   -webkit-animation-name: roll-in;
-  -moz-animation-name: roll-in;
-  -o-animation-name: roll-in;
   animation-name: roll-in;
 }
 
@@ -2974,8 +2860,6 @@
 
 .roll-out {
   -webkit-animation-name: roll-out;
-  -moz-animation-name: roll-out;
-  -o-animation-name: roll-out;
   animation-name: roll-out;
 }
 
@@ -3037,8 +2921,6 @@
 
 .rotate-in {
   -webkit-animation-name: rotate-in;
-  -moz-animation-name: rotate-in;
-  -o-animation-name: rotate-in;
   animation-name: rotate-in;
 }
 
@@ -3100,8 +2982,6 @@
 
 .rotate-down-left-in {
   -webkit-animation-name: rotate-down-left-in;
-  -moz-animation-name: rotate-down-left-in;
-  -o-animation-name: rotate-down-left-in;
   animation-name: rotate-down-left-in;
 }
 
@@ -3163,8 +3043,6 @@
 
 .rotate-down-right-in {
   -webkit-animation-name: rotate-down-right-in;
-  -moz-animation-name: rotate-down-right-in;
-  -o-animation-name: rotate-down-right-in;
   animation-name: rotate-down-right-in;
 }
 
@@ -3226,8 +3104,6 @@
 
 .rotate-up-left-in {
   -webkit-animation-name: rotate-up-left-in;
-  -moz-animation-name: rotate-up-left-in;
-  -o-animation-name: rotate-up-left-in;
   animation-name: rotate-up-left-in;
 }
 
@@ -3289,8 +3165,6 @@
 
 .rotate-up-right-in {
   -webkit-animation-name: rotate-up-right-in;
-  -moz-animation-name: rotate-up-right-in;
-  -o-animation-name: rotate-up-right-in;
   animation-name: rotate-up-right-in;
 }
 
@@ -3352,8 +3226,6 @@
 
 .rotate-out {
   -webkit-animation-name: rotate-out;
-  -moz-animation-name: rotate-out;
-  -o-animation-name: rotate-out;
   animation-name: rotate-out;
 }
 
@@ -3415,8 +3287,6 @@
 
 .rotate-down-left-out {
   -webkit-animation-name: rotate-down-left-out;
-  -moz-animation-name: rotate-down-left-out;
-  -o-animation-name: rotate-down-left-out;
   animation-name: rotate-down-left-out;
 }
 
@@ -3478,8 +3348,6 @@
 
 .rotate-down-right-out {
   -webkit-animation-name: rotate-down-right-out;
-  -moz-animation-name: rotate-down-right-out;
-  -o-animation-name: rotate-down-right-out;
   animation-name: rotate-down-right-out;
 }
 
@@ -3541,8 +3409,6 @@
 
 .rotate-up-left-out {
   -webkit-animation-name: rotate-up-left-out;
-  -moz-animation-name: rotate-up-left-out;
-  -o-animation-name: rotate-up-left-out;
   animation-name: rotate-up-left-out;
 }
 
@@ -3604,8 +3470,6 @@
 
 .rotate-up-right-out {
   -webkit-animation-name: rotate-up-right-out;
-  -moz-animation-name: rotate-up-right-out;
-  -o-animation-name: rotate-up-right-out;
   animation-name: rotate-up-right-out;
 }
 
@@ -3699,8 +3563,6 @@
 
 .shake {
   -webkit-animation-name: shake;
-  -moz-animation-name: shake;
-  -o-animation-name: shake;
   animation-name: shake;
 }
 
@@ -3754,8 +3616,6 @@
 
 .shrink-in {
   -webkit-animation-name: shrink-in;
-  -moz-animation-name: shrink-in;
-  -o-animation-name: shrink-in;
   animation-name: shrink-in;
 }
 
@@ -3809,8 +3669,6 @@
 
 .shrink-out {
   -webkit-animation-name: shrink-out;
-  -moz-animation-name: shrink-out;
-  -o-animation-name: shrink-out;
   animation-name: shrink-out;
 }
 
@@ -3904,12 +3762,8 @@
 
 .swing {
   -webkit-animation-name: swing;
-  -moz-animation-name: swing;
-  -o-animation-name: swing;
   animation-name: swing;
   -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -o-transform-origin: top center;
   transform-origin: top center;
 }
 
@@ -4027,8 +3881,6 @@
 
 .tada {
   -webkit-animation-name: tada;
-  -moz-animation-name: tada;
-  -o-animation-name: tada;
   animation-name: tada;
 }
 
@@ -4218,19 +4070,13 @@
 
 .wiggle {
   -webkit-animation-name: wiggle;
-  -moz-animation-name: wiggle;
-  -o-animation-name: wiggle;
   animation-name: wiggle;
   -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  -o-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
 
 .animated.wiggle {
   -webkit-animation-duration: 0.5;
-  -moz-animation-duration: 0.5;
-  -o-animation-duration: 0.5;
   animation-duration: 0.5;
 }
 
@@ -4356,7 +4202,5 @@
 
 .wobble {
   -webkit-animation-name: wobble;
-  -moz-animation-name: wobble;
-  -o-animation-name: wobble;
   animation-name: wobble;
 }
