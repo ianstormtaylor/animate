@@ -1,4 +1,3 @@
-
 # animate
 
   Component: easily apply [animate.css](http://daneden.me/animate/) animations to elements via Javascript.
@@ -27,7 +26,7 @@
   animate.in(el, 'bounce');
   ```
 
-### animate(element, animation, callback)
+### animate.out(element, animation, callback)
 
   Apply an "out" `animation` to an `element` to make it invisible. You can leave off the `-out` in the animation name.
 
