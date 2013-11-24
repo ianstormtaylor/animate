@@ -72,6 +72,8 @@ module.exports.out = function animateOut (element, animation, remove, callback) 
       $(element)
         .css('visibility', 'hidden')
         .slideUp(100, callback);
+    } else {
+      if (callback) callback();
     }
   });
 };
