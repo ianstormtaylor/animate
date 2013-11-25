@@ -2,7 +2,7 @@
   "name": "animate",
   "repo": "ianstormtaylor/animate",
   "description": "Component: easily apply animate.css animations to elements via Javascript.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "animate",
     "animate.css",
